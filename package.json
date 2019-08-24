@@ -1,0 +1,34 @@
+{
+  "name": "zadanie7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"err: no test spec\" && exit 1",
+    "init:dirs": "mkdirp src",
+    "init:files": "touch README.md src/index.html",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "init": "npm-run-all init:* ",
+    "prewatch": "npm run clean",
+    "watch": "parcel src/index.html --open --no-autoinstall --port 8080",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/index.html",
+    "clean": "rimraf dist",
+    "format": "prettier --write \"src/**/*.{js,html,scss}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.11.0",
+    "posthtml-include": "^1.2.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
+    "rimraf": "^2.6.3",
+    "sass": "^1.15.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  }
+}
