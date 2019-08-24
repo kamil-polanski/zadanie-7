@@ -1,0 +1,20 @@
+.hero {
+  padding-top: 250px;
+  background-image: url("../img/jumbo.png");
+  background-size: cover;
+  height: 100%;
+  color: $white;
+
+  h1 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  button {
+    margin-bottom: 115px;
+  }
+}
