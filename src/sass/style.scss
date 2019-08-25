@@ -1,10 +1,18 @@
 @import './var';
 @import './sections/jumbo';
+@import './sections/services';
 @import './util/button';
 @import './util/section';
+@import './componentes/component--fa';
+
 
 .container-width {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0;
+}
+
+p {
+  font-size: 10px;
+  color: $grey;
 }
